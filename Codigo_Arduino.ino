@@ -7,7 +7,7 @@ pinMode(11, INPUT); // Setup for leads off detection LO -
 }
  
 void loop() {
- 
+ //Recordar que de ser necesario cambiar los puertos digitales para que pueda leer las pulsasiones el sensor
 if((digitalRead(10) == 1)||(digitalRead(11) == 1)){
 Serial.println('!');
 }
